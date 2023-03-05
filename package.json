@@ -1,0 +1,28 @@
+{
+  "name": "figma-electron-application-builder",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build:windows": "ts-node -r tsconfig-paths/register src/app.ts --platform windows",
+    "build:linux": "ts-node -r tsconfig-paths/register src/app.ts --platform linux",
+    "build:macos": "ts-node -r tsconfig-paths/register src/app.ts --platform macos",
+    "build:windows-portable": "ts-node -r tsconfig-paths/register src/app.ts --platform windows --portable",
+    "build:linux-portable": "ts-node -r tsconfig-paths/register src/app.ts --platform linux --portable",
+    "build:macos-portable": "ts-node -r tsconfig-paths/register src/app.ts --platform macos --portable"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "asar": "^3.2.0",
+    "electron-packager": "^17.1.1",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "nativefier": "^50.0.1",
+    "npargv": "^1.0.7",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.2",
+    "typescript": "^4.9.5"
+  }
+}
